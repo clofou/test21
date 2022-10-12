@@ -9,6 +9,9 @@ if op == '+' :
 elif op == '*' :
     print ("multiplication {}{}{} = {}".format(number1, op, number2, number1*number2))
 elif op == '/' :
-    print ("division {}{}{} = {}".format(number1, op, number2, number1/number2))
+    if number2 == 0:
+        print("Division impossible!")
+    else:
+        print ("division {}{}{} = {}".format(number1, op, number2, number1/number2))
 else :
     print ("soustraction {}{}{} = {}".format(number1, op, number2, number1-number2))
